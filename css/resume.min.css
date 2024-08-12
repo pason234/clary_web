@@ -26,12 +26,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    padding-top: 40px;
+    padding-top: 5rem;
     font-size: 6rem;
     line-height: 5.5rem;
 }
 
 h2 {
+    padding-top: 40px;
     font-size: 3.5rem;
 }
 
@@ -178,21 +179,20 @@ section.resume-section .resume-item .resume-date {
 }
 section.resume-section{
     position: relative;
+    z-index: 1000;
     background-image: url('../img/v1013-p-0009a.jpg');
     background-size: 60%;
-    background-color: rgba(255, 255, 255, 1); /* Black overlay with 50% opacity */
-    z-index: 1000;
     background-blend-mode: overlay;
-    background-color: #f2e2f1;
+    background-color: rgb(255, 255, 255, 0.75) !important;
     border-bottom :solid rgb(29, 29, 29);
 }
 /* Background and Text Color Classes */
 .bg-primary {
-    background-image: url('../img/01-01.jpg');
-    background-size: 80%;
-    background-color: rgba(211, 190, 203, 0.9) !important;
     z-index: 2000;
+    background-image: url('../img/01-01.jpg');
+    background-size: 90%;
     background-blend-mode: overlay;
+    background-color: rgb(255, 255, 255, 0.5) !important;
 }
 
 .text-primary {
