@@ -82,10 +82,9 @@ h2 {
         flex-direction: column;
         width: 15rem;
         height: 100vh;
-        z-index: 1050; /* Ensure it's above other content */
+        z-index: 2000; /* Ensure it's above other content */
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
-        border-left :solid rgb(29, 29, 29);
     }
 
     #sideNav .navbar-brand {
@@ -192,7 +191,7 @@ section.resume-section{
     background-image: url('../img/01-01.jpg');
     background-size: 80%;
     background-color: rgba(211, 190, 203, 0.9) !important;
-    z-index: 1000;
+    z-index: 2000;
     background-blend-mode: overlay;
 }
 
