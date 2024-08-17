@@ -1,3 +1,6 @@
+<?php
+  $last_answer = file_get_contents('fetch_answer.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,13 +68,25 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Test1
-            <span class="text-primary">Taylor</span>
-          </h1>
-          <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-            <a href="mailto:name@email.com">name@email.com</a>
-          </div>
-          <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+            <?php if ($last_answer): ?>
+                <?php if ($last_answer == 'yes'): ?>
+                    <h1 class="mb-0">YESSSSSSSSSSSSSSS
+                        <span class="text-primary">Taylor</span>
+                    </h1>
+                <?php else: ?>
+                    <h1 class="mb-0">NOOOOOOOOOO
+                        <span class="text-primary">Taylor</span>
+                    </h1>
+                <?php endif; ?>
+            <?php else: ?>
+                <h1 class="mb-0">NO ANSWERRRRRRRRR
+                    <span class="text-primary">Taylor</span>
+                </h1>
+            <?php endif; ?>
+            <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+                <a href="mailto:name@email.com">name@email.com</a>
+            </div>
+            <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high-level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
         </div>
       </section>
 
